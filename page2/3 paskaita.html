@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+<style>
+#first
+{
+    width: 400px;
+    height: 340px;
+    float: left;
+}
+#second
+{
+    width: 1500px;
+    height: 1300px;
+    float: left;
+}
+#third
+{
+    width: 700px;
+    height: 350px;
+    float: left;
+}
+</style>
+</head>
+<body>
+
+<h1>3 paskaita</h1>
+
+<p><b><i>Apra&#x161;ymas:</i></b> &#x201E;Fizikiniai d&#x117;sniai&#x201C; &#x2013; susipa&#x17E;inimas su 2D sfera, pagrindiniais fizikiniais d&#x117;sniais. Gravitacija. Susipa&#x17E;inimas su kai kuriomis Physics2D galimyb&#x117;mis (Distance Joint 2D, Hinge Joint 2D, Area Effector 2D, Buoyancy Effector 2D, Slider Joint 2D). Nedidelio fizikinio &#x17E;aidimo (panaudojant &#x161;ias Physics) k&#x16B;rimas.</p>
+<hr>
+<div id="first">
+<h3>Assets:</h3>
+<p>Atsisiun&#x10D;iam i&#x161; Asset Store -&#x3E; &#x22;2D Sprites Pack&#x22;.</p>
+ <img src="Images/3 paskaita/2dspritespack.png" style="float:right;">
+<p>Arba i&#x161; <a href="https://www.assetstore.unity3d.com/en/#!/content/73728">&#x10D;ia</a>.</p>
+</div>
+<div id="second">
+<h3><ins>Naudinga informacija</ins></h3>
+<ul>
+<li><p><b>Order in Layer</b> - kuo didesnis skai&#x10D;ius, tuo objektas bus ar&#x10D;iau kameros (t.y. jo neu&#x17E;stos kiti objektai).</p></li>
+<img src="Images/3 paskaita/OrderInLayer.png" alt="Sorry, no picture found" style="max-width:100%;height:auto;">
+<li><p>Su <b>ctrl+D</b> galima duplikuoti objektus. Bus sukurtas naujas objektas su visom duplikuoto objekto reik&#x161;m&#x117;m (t.y. visi&#x161;kai toks pat).</p></li>
+<li><p>Kaip prid&#x117;ti komponentus: - Inspector -&#x3E; Add Component -&#x3E; ie&#x161;kom kok&#x12F; komponent&#x105; norim gauti.</p>
+<img src="Images/3 paskaita/addcomp.png" alt="Sorry, no picture found" style="max-width:100%;height:auto;"> </li>
+<li><p>Galima sukurti Physics Material, kuris leis pakeisti to objekto Bounciness (&#x161;oklum&#x105;) ir Friction (trint&#x12F;). <br>Mes kursim Physics Material 2D, nes m&#x16B;s&#x173; projektas 2D.<br> Kaip j&#x12F; sukurti: Assets -&#x3E; (de&#x161;in&#x12F; pel&#x117;s klavi&#x161;&#x105;) -&#x3E; Create -&#x3E; Physics Material 2D.</p></li>
+<li><p><b>Prefabs</b> - galima sukurti prefab&#x27;&#x105; (&#x22;u&#x17E;prefabinti objekt&#x105;&#x22;) - t.y. i&#x161;saugoti visas objekto reik&#x161;mes projekte. Pla&#x10D;iau apie Prefab&#x27;us tutoriale.</p></li>
+</ul>
+</div>
+<div id="third">
+<h4><ins>Komponentai, kuriuos naudosim &#x161;i&#x105; paskait&#x105;:</ins></h4>
+<ol type="1">
+<li><p><b>Box Collider (2D)</b> - pridedam &#x161;&#x12F; komponent&#x105; sukurtam objektui, kad jis &#x12F;gaut&#x173; form&#x105;, kad galima b&#x16B;t&#x173; su juo susidurti, o ne pereiti j&#x12F; kiaurai. <br> Yra ir kit&#x173; collideri&#x173; tip&#x173;: CircleCollider, EdgeCollider, CapsuleCollider ir t.t.</p>
+<img src="Images/3 paskaita/boxcollider.png" alt="Sorry, picture not found" style="max-width:100%;height:auto;">
+</li>
+<li><p><b>Rigidbody (2D)</b> - &#x161;is komponentas duoda objektui bendr&#x105; supratim&#x105; apie visas fizikines j&#x117;gas (gravitacij&#x105;, mas&#x119; ir t.t.).</p>
+<img src="Images/3 paskaita/rigidbody2d.png" alt="Sorry, picture not found" style="max-width:100%;height:auto;">
+</li>
+<li><p><b>Circle Collider (2D)</b></p></li>
+<li><h4>Joint'ai ir Effect'ai:</h4></li>
+<ul>
+<li><p><b>Distance Joint 2D</b></p></li>
+<li><p><b>Hinge Joint 2D</b></p></li>
+<li><p><b>Area Effector 2D</b></p></li>
+<li><p><b>Buoyancy Effector 2D</b></p></li>
+<li><p><b>Slider Joint 2D</b></p></li>
+</ul>
+</ol>
+<br>
+<hr>
+<h3><ins>Tutorials</ins></h3>
+<ol>
+<li><p><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/prefabs-concept-usage">Prefabs</a> tutorial (recommended).</p></li>
+
+<li><p><a href="https://unity3d.com/learn/tutorials/topics/2d-game-creation/collider-2d">Colliders 2D</a> tutorial (recommended).</p></li>
+
+<li><p><a href="https://unity3d.com/learn/tutorials/topics/2d-game-creation/rigidbody-2d">Rigidbody 2D</a> tutorial (recommended).</p></li>
+
+<li><p><a href="https://docs.unity3d.com/Manual/class-PhysicsMaterial2D.html">Physics Material 2D</a> tutorial.</p></li>
+</ol>
+<br>
+<hr>
+<h3><ins>U&#x17E;duotis</ins></h3>
+<p>Sukurti nauj&#x105; scen&#x105; (nauj&#x105; lyg&#x12F;). Padaryti taip, kad kamuolys atsidurt&#x173; nuo ta&#x161;ko A iki ta&#x161;ko B, panaudojant visus joint&#x27;us ir effect&#x27;us.<br> Pvz.: </p>
+<img src="Images/3 paskaita/pvzgame1.png" alt="Sorry, picture not found" style="max-width:100%;height:auto;">
+<br>
+<hr>
+
+</div>
+</body>
+</html>
