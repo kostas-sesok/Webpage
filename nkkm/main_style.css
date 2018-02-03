@@ -18,8 +18,13 @@ border: 2px solid black;
     margin: 1.5px;
     padding: 3px;
     float:left;
-    max-width: 100px;
+    min-width: 100px;
     max-height: 34.39px;
+}
+
+.btn
+{
+    margin-bottom: 10px;
 }
 #first{
 width:120px;
@@ -49,7 +54,7 @@ top:20.1px;
 #main
 {
     width:440px;
-    height:450px;
+    height:580px;
     position: absolute;
     left:185px; /*170px*/
     top:70px; /*60*/
