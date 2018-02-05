@@ -1,0 +1,9 @@
+Distance Joint - Palaiko distancija nuo tam tikro tasko
+
+Fixed joint - Palaiko fixuota atstuma nuo kito fizinio objekto esancio scenoje.
+
+Hinge joint - Motor ir angle limits. Galima padaryti tramplyna to pagalba.
+
+Relative joint - priklijuotas prie tasko. GAlima nustatyti maximalia jega iki tol kol jis nutruks. Galima padaryti siena, i kuria reikia stipriai atsitrenk kad nutruktu
+
+Slider Joint - Leidzia objektui tureti judejimo asi ir judeti pagal ji.
