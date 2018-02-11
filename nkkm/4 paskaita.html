@@ -1,53 +1,62 @@
 
 <!DOCTYPE html>
 <html lang="lt-LT">
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<head>
-    <title>4 paskaita Ping Pong</title>
-</head>
-<body>
-<h1>4 paskaita</h1>
-<p><b><i>Aprašymas:</i></b> "Ping-Pong 1 dalis" - pradedam kurti Ping-Pong žaidimą (Player prieš BOT). Fizikinių jėgų kūrimas (su skriptu). Velocity, Rigidbody2D tipo kintamieji. Collider'iai. Susipažinimas su OnTriggerEnter2D funkcija.</p>
-<hr>
-<h3>Assets:</h3>
-<p>Einam į googlą ir susirandam baltą kvadratą ir apskritimą arba tiesiog atsiunčiam iš čia: <a href="Files/4_Paskaita/whiteSquare.png" download><b>kvadratas</b></ins></a> ir <a href="Files/4_Paskaita/ball.png" download><b>apskritimas</b></ins></a></p>  
-<p>Iš jų mes padarysim mūsų padalas ir kamuolį. Atsisiuntę failus susiimportuojam į Unity.</p>
-<h3><ins>Žaidimo kūrimas</ins></h3>
-<p>Pradėkim nuo to jog reikia nustatytį ekrano raišką į kurią mes orientuojames kurdami žaidimą. Šiuo atveju puikiai tinka 1920x1080</p>
-<img src= "Images/4 Paskaita/Resolution.png" alt="Resolution 1920x1080" >
-<p>Tada sudėliokime viską į sceną taip, kaip maždaug turėtų atrodyti mūsų žaidimas. Galėtų būti kažkas panašaus į tai:</p>
-<img src= "Images/4 Paskaita/GameView.png" alt="GameView" width="500px" height="300px">
-<p>Padarykim sienas mūsų žaidimo langui:</p>
-<img src= "Images/4 Paskaita/Boundaries.png" alt="Boundaries" width="500px" height="300px">
-<p>Pridėkime visus reikiamus komponentus kamuoliui:</p>
-<ul>
-    <li>Rigidbody2D</li>
-    <li>Circle Collider2D</li>
-    <li>Physics Material2D ir pridėkime į Rigidbody2D material vietą</li>
-</ul>
-<p>Nepamirškime komponentų ir padalom:</p>
-<ul>
-    <li>Rigidbody2D**</li>
-    <li>Box Collider2D</li>
-</ul> 
-<p>** Rigidbody2D privalo turėti specialius nustatymus:</p>
-<ul>
-    <li>Body Type privalo būti pakeistas į "Kinematic". Tai išjungia gravitaciją, bet vis tiek leidžia kontroliuoti mūsų fizikinį kūną duodant jam jėgų pvz. per skriptą.</li>
-    <li>Collision Detection turėtų būtį "Continuous". Tai tiesiog priverčia kūną dažniau tikrinti ar jis susidūrė su kitais kūnais.</li>
-    <li>Interpolate nustatymas tūrėtų būti pakeistas į "Interpolate". Kūno judėjimą padarom labiau tolygų.</li>
-</ul>
-<img src= "Images/4 Paskaita/Rigidbody2D_settings.png" alt="RB2D settings" width="315px" height="216px">
-<p>Plačiau apie Rigidbody 2D komponento nustatymus rasite <a href="https://docs.unity3d.com/Manual/class-Rigidbody2D.html">čia</a></p>
-<b><p>Belieka parašyti skriptus :). Jie bus įkelti po paskaitos.</p></b>
-<hr>
-<h3><ins>Tutorials (Pamokos)</ins></h3>
-<ol>
-<li><a href="https://www.youtube.com/watch?v=W7ZtCEbeQEA">OnCollisionEnter2D</a> tutorial (recommended)</li>
-
-<li><a href="https://unity3d.com/learn/tutorials/topics/scripting/getbutton-and-getkey">Input</a> tutorial (recommended).</li>
-</ol>
-<h3><ins>Užduotis</ins></h3>
-<p>Šiai paskaitai užduoties nėra!</p>
-</body>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>4 paskaita Ping Pong</title>
+    </head>
+    <body>
+        <h1>4 paskaita</h1>
+        <p><b><i>Aprašymas:</i></b> "Ping-Pong 1 dalis" - pradedam kurti Ping-Pong žaidimą (Player prieš BOT). Fizikinių jėgų kūrimas (su skriptu). Velocity, Rigidbody2D tipo kintamieji. Collider'iai. Susipažinimas su OnTriggerEnter2D funkcija.</p>
+        <hr>
+        <h3>Assets:</h3>
+        <p>Einam į googlą ir susirandam baltą kvadratą ir apskritimą arba tiesiog atsiunčiam iš čia: <a href="Files/4_Paskaita/whiteSquare.png" download><b>kvadratas</b></ins></a> ir <a href="Files/4_Paskaita/ball.png" download><b>apskritimas</b></ins></a></p>  
+        <p>Iš jų mes padarysim mūsų padalas ir kamuolį. Atsisiuntę failus susiimportuojam į Unity.</p>
+        <h3><ins>Žaidimo kūrimas</ins></h3>
+        <p>Pradėkim nuo to jog reikia nustatytį ekrano raišką į kurią mes orientuojames kurdami žaidimą. Šiuo atveju puikiai tinka 1920x1080</p>
+        <img src= "Images/4 Paskaita/Resolution.png" alt="Resolution 1920x1080" >
+        <p>Tada sudėliokime viską į sceną taip, kaip maždaug turėtų atrodyti mūsų žaidimas. Galėtų būti kažkas panašaus į tai:</p>
+        <img src= "Images/4 Paskaita/GameView.png" alt="GameView" width="500px" height="300px">
+        <p>Padarykim sienas mūsų žaidimo langui:</p>
+        <img src= "Images/4 Paskaita/Boundaries.png" alt="Boundaries" width="500px" height="300px">
+        <p>Pridėkime visus reikiamus komponentus kamuoliui:</p>
+        <ul>
+            <li>Rigidbody2D**</li>
+            <li>Circle Collider2D</li>
+            <li>Physics Material2D ir pridėkime į Rigidbody2D material vietą</li>
+        </ul>
+        <p>Nepamirškime komponentų ir padalom:</p>
+        <ul>
+            <li>Rigidbody2D**</li>
+        <li>Box Collider2D</li>
+        </ul> 
+        <p>** Rigidbody2D privalo turėti specialius nustatymus:</p>
+        <ul>
+            <li>Body Type privalo būti pakeistas į "Kinematic". Tai išjungia gravitaciją, bet vis tiek leidžia kontroliuoti mūsų fizikinį kūną duodant jam jėgų pvz. per skriptą.</li>
+            <li>Collision Detection turėtų būtį "Continuous". Tai tiesiog priverčia kūną dažniau tikrinti ar jis susidūrė su kitais kūnais.</li>
+            <li>Interpolate nustatymas tūrėtų būti pakeistas į "Interpolate". Kūno judėjimą padarom labiau tolygų.</li>
+        </ul>
+        <img src= "Images/4 Paskaita/Rigidbody2D_settings.png" alt="RB2D settings" width="315px" height="216px">
+        <p>Plačiau apie Rigidbody2D komponento nustatymus rasite <a href="https://docs.unity3d.com/Manual/class-Rigidbody2D.html">čia</a></p>
+        <b><p>Belieka parašyti skriptus :)</p></b>
+        <p>PlayerController.cs</p>
+        <img src="Images/4 Paskaita/PlayerController.png" alt ="PlayerController.cs" width="1024px" height="452px">
+        <p>BallController.cs</p>
+        <img src="Images/4 Paskaita/BallController.png" alt ="BallController.cs" width="1024px" height="800px">
+        <p>AIControlles.cs</p>
+        <img src="Images/4 Paskaita/AIController.png" alt ="AIController.cs" width="1024px" height="452px">
+        <hr>
+        <h3><ins>Tutorials (Pamokos)</ins></h3>
+        <ol>
+            <li><a href="https://www.youtube.com/watch?v=W7ZtCEbeQEA">OnCollisionEnter2D</a> tutorial (recommended)</li>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/tags">Tags</a> tutorial (recommended)</li>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/scripting/getbutton-and-getkey">Input</a> tutorial (recommended).</li>
+        </ol>
+        <h3><ins>Užduotis</ins></h3>
+        <p>Šiai paskaitai užduoties nėra!</p>
+        <hr>
+        <a href="Files/4_Paskaita/Pong.zip" download><h3><ins>Galutinis paskaitos projektas atsisiųsti</ins></h3></a>
+    </body>
 </html>
