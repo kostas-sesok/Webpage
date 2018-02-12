@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="lt-LT">
+<head>
+    <!--<link rel="stylesheet" type="text/css" href="lessons_style.css">-->
+	 <meta charset="UTF-8">
+</head>
 <body>
-
 <h1>5 paskaita</h1>
-
-<p><b><i>Apra&#x161;ymas:</i></b> &#x201E;Snake&#x201C; &#x2013; Snake &#x17E;aidimo k&#x16B;rimas. Objekt&#x173; perk&#x117;limas &#x12F; kit&#x105; pozicij&#x105;, transform.position, transform.Translate(). Vector&#x2018;iai. List&#x2018;o k&#x16B;rimas. InvokeRepeating() ,(Invoke() &#x2013; restartuojant &#x17E;aidim&#x105;) panaudojimas.</p>
-
+<p><b><i>Aprašymas:</i></b> Tęsiam Ping-Pong žaidimo. GameManager skripto kūrimas. Score. Susipažinimas su onTriggerEnter2D funkcija.</p>
+<hr>
+<h3>Assets: <i>nėra.</i></h3>
+<h3><ins>žaidimo kūrimas</ins></h3>
+<p>Pirmiausia sukuriam tuščią objektą. Pavadinam jį GameManager. Čia bus pagrindinis šio žaidimo objektas, kuriam ir pridėsim GameManager skriptą.</p>
+<img src="Images/5 paskaita/addEmpty.png" alt="No image found"> <br>
+<p>Kitas žingsnis: pervadinam šį objektą į "GameManager". Nuresetinam (grąžinam į pradines reikšmes) jo poziciją. <p>
+<img src="Images/5 paskaita/renameGM.png" alt="No image found"> <br>
+<img src="Images/5 paskaita/resetGM.png" alt="No image found">
+<p>Dabar sukuriam naują skriptą ir pridedam jį prie GameManager objekto. GameManager -> AddComponent -> New Script -> "GameManager" - > Create and Add.</p>
+<img src="Images/5 paskaita/addGM.png" alt="No image found">
+<p>Sukuriam 2 UI Text elementus, kurie atvaizduos žaidėjo ir priešo taškus. Dabar žaidimas turėtų atrodyti taip:</p>
+<img src="Images/5 paskaita/addText.png" alt="No image found">
+<p>O toliau belieka aprašyti GameManager ir papildyt BallController skriptus. </p>
+<p><b>Skriptai bus įkelti po paskaitos</b></p>
+<hr>
+<h3><ins>Užduotis</ins></h3>
+<ol>
+    <li>Surasti ir pridėti žaidimui foną (background)</li>
+	<li>Sustabdyti žaidimą kai kažkuris žaidėjas surenka 10 taškų (Sustabdymui naudokite šią kodo eilutę : <ins>Time.timeScale = 0.0f)</ins></li>
+</ol>
 </body>
 </html>
