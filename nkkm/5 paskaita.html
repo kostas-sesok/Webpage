@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>5 paskaita</h1>
-<p><b><i>Aprašymas:</i></b> Tęsiam Ping-Pong žaidimo. GameManager skripto kūrimas. Score. Susipažinimas su onTriggerEnter2D funkcija.</p>
+<p><b><i>Aprašymas:</i></b> Tęsiam Ping-Pong žaidimo. GameManager skripto kūrimas. Score. Susipažinimas su onTriggerEnter2D funkcija. Žaidimo "subuildinimas" į atskirą .exe failą. Susipažinimas su "Build" nustatymais.</p>
 <hr>
 <h3>Assets: <i>nėra.</i></h3>
 <h3><ins>žaidimo kūrimas</ins></h3>
@@ -20,12 +20,35 @@
 <p>Sukuriam 2 UI Text elementus, kurie atvaizduos žaidėjo ir priešo taškus. Dabar žaidimas turėtų atrodyti taip:</p>
 <img src="Images/5 paskaita/addText.png" alt="No image found">
 <p>O toliau belieka aprašyti GameManager ir papildyt BallController skriptus. </p>
-<p><b>Skriptai bus įkelti po paskaitos</b></p>
+<p>GameManager.cs</p>
+<img src="Images/5 paskaita/GameManager.png" alt="No image found">
+<img src="Images/5 paskaita/GameManager2.png" alt="No image found">
+<p>MenuManager.cs</p>
+<img src="Images/5 paskaita/MenuManager.png" alt="No image found">
+<p>BallController</p>
+<img src="Images/5 paskaita/BallController.png" alt="No image found">
+<img src="Images/5 paskaita/BallController2.png" alt="No image found">
+<h3>Svarbu</h3>
+<p>Jeigu turite daugiau nei vieną sceną ir norite iš vienos pereiti į kitą žaidimo metu, jūs privalote pridėti jas į "Build Settings"<br>
+    "Build Settings galite rasti viršutiniame menu, paspaudus File-> Build Settings..". Langas turėtų atrodyti maždaug taip :</p>
+    <img src="Images/5 paskaita/BuildSettingsVisual.png" alt="No image found">
+<p>Tada belieka tiesiog įtempti savo scenas į "Scenes in Build" langą ir viskas turėtų veikti.<br>
+    Taipogi, jei norite žaidimą subuildinti, galit tiesiog spausti "Build and run" mygtuką.<br>
+    Kai viskas susikompiliuos ir susibuildins, jūs turėsite savo žaidimą kaip atskirą exe failą.</p>
 <hr>
-<h3><ins>Užduotis</ins></h3>
+<h3><ins>Tutorials (Pamokos)</ins></h3>
+    <ol>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/build-and-player-settings">Build Settings</a> tutorial (recommended)</li>
+        <li><a href="https://www.youtube.com/watch?v=7wAjJBSQxys">OnTriggerEnter2D</a> tutorial (recommended)</li>
+    </ol>
+<hr>
+<h3><ins>Užduotys</ins></h3>
 <ol>
     <li>Surasti ir pridėti žaidimui foną (background)</li>
-	<li>Sustabdyti žaidimą kai kažkuris žaidėjas surenka 10 taškų (Sustabdymui naudokite šią kodo eilutę : <ins>Time.timeScale = 0.0f)</ins></li>
+    <li>Sustabdyti žaidimą kai kažkuris žaidėjas surenka 10 taškų (Sustabdymui naudokite šią kodo eilutę : <ins>Time.timeScale = 0.0f</ins>)</li>
+    <li>Sukurti 2 scenas. Pirma scena bus iškviečiama kai žaidėjas laimės, antra scena bus iškviečiama kai bot'as laimės.<br>
+         Kiekvienoje scenoje turi būti po mygtuką kuris leis mum grįžti atgal į pagrindinį menu </li>
 </ol>
+<a href="Files/5_Paskaita/PingPong.zip" download><h3><ins>Galutinis paskaitos projektas atsisiųsti</ins></h3></a>
 </body>
 </html>
