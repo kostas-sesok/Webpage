@@ -1,11 +1,41 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="lt-LT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>6 paskaita Snake</title>
+    </head>
 <body>
 
 <h1>6 paskaita</h1>
 
-<p><b><i>Apra&#x161;ymas:</i></b> &#x201E;Ping-Pong 2 dalis&#x201C; &#x2013; t&#x119;siam Ping-Pong &#x17E;aidim&#x105;. TrailRenderer. Score. Vieno skripto (GameManager) naudojimas kitame(BallController).AddForce(). Susipa&#x17E;inimas su OnCollisionEnter2D funkcija. ResetGame(), DelayStart().</p>
+<p><b><i>Aprašymas:</i></b> Kuriam 2D snake žaidimą. Sužinosime ka daro Invoke ir InvokeRepeating metodai. Pridėsime žaidimui garso elementų bei grafinių elementų (Particle Systems). Išmoksim sukurti objektą scenoje per skriptą naudodami Instantiate metodą.</p>
+<hr>
+<h3>Assets: </h3>
+<p>Siunčiamės assetus iš <a href="Files/6_Paskaita/Files.zip" download><b>čia</b></a>, išpakuojam zip'ą ir įsikeliame į Unity.</p>
+<p>Iš turimų asset'ų pasidarom štai tokią sceną. Viduryje turim mūsų gyvatėlę, o aplinkui sienas. <b>Labai svarbu, kad visos objektų pozicijos būtų sveiki skaičiai!</b></p>
+<img src= "Images/6 paskaita/GameView.png" alt = "No image found">
+<p>Uždėkime visoms sienoms "Box Collider2D" komponentą ir pažymėkime "Is Trigger" nustatymą, kad būtų TRUE.</p>
+<p>Gyvatėlei uždėkime "Box Collider2D" žymim jį kaip Trigger'į, "Rigidbody2D" ir pakeičiam jo body type į "Kinematic". </p>
+<b><p>Belieka parašyti skriptus :), kuriuos kaip visada, ikelsiu po paskaitos.</p></b>
+<p>Parašę skriptus, galime pridėti ir garso efektų į mūsų žaidimą. Atsisiunčiam juos iš <a href="Files/6_Paskaita/Sound.zip" download><b>čia</b></a> arba bet kokius kitus kurie jum patinka.</p>
+<p>Pridėkime "Robot_blip-Marianne_Gagnon-120342607" garso takelį prie mūsų gyvatėlės objekto, o likusį takelį ("tkucza-lullibulero") pridėkime prie gyvatėles skripto.</p>
+<hr>
+<h3><ins>Tutorials (Pamokos)</ins></h3>
+    <ol>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/scripting/invoke">Invoke ir InvokeRepeating</a> tutorial (recommended)</li>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/scripting/instantiate">Instantiate</a> tutorial (recommended)</li>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/audio/audio-listeners-sources">Audio</a> tutorial</li>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/graphics/particle-system">Particle Systems</a> tutorial</li>
+    </ol>
+<hr>
+
+<h3><ins>Užduotys</ins></h3>
+<ol>
+    <li>Pridėti žaidimui Foną(background)</li>
+    <li>Padaryti pauzės mygtuka(ESC), kurį paspaudus kartą žaidimas sustoja, o paspaudos dar kartą žaidimas tęsiasi.</li>
+</ol>
 
 </body>
 </html>
