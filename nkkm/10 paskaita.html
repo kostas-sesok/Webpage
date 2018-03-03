@@ -1,11 +1,36 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="lt-LT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>10 paskaita Duck Hunt</title>
+    </head>
 <body>
 
 <h1>10 paskaita</h1>
 
-<p><b><i>Apra&#x161;ymas:</i></b> &#x201E;Duck hunt&#x201C; &#x2013; Duck hunt &#x17E;aidimo k&#x16B;rimas. (SpriteEditor (slice).-jeigu naudot Sprite sheet). Animacij&#x173; k&#x16B;rimas (trumpuoju keliu). Spawner&#x2018;i&#x173; k&#x16B;rimas. Pauk&#x161;&#x10D;i&#x173; masyv&#x173; GameObject[] k&#x16B;rimas. BirdLayer. Vector2 &#x2013; movement&#x2018;ui. Pasaulio koordinat&#x117;s. RaycastHit2D. Destroyer (sienos su OnTrigger). Time. Score.</p>
+<p><b><i>Aprašymas:</i></b> "Duck hunt" - Duck hunt žaidimo kūrimas. (SpriteEditor (slice).-jeigu naudot Sprite sheet). Animacijų kūrimas (trumpuoju keliu). Spawner'io kūrimas. Paukščių masyvo GameObject[] kūrimas. BirdLayer. Vector2- movement'ui. Pasaulio koordinatės. RaycastHit2D. Destroyer (sienos su OnTrigger). Time. Score.</p>
+<h3>Assets:</h3>
+<p><a href="Files/10_Paskaita/BirdSprites.zip" download><b>Paukščiai</b></ins></a></p>
+<p><a href="Files/10_Paskaita/Background.png" download><b>Background(fonas)</b></ins></a></p>
+<hr>
+<p>Susiimportavę visus spritus, sukurkime sceną mūsų žaidimui. Uždėkime background'ą, ir padarykime paukštį su animacija.<br>
+Tiesiog paimkime visus 4 geltono paukščio sprite'us ir tempkime į sceną. Taip automatiškai sukursime animaciją.</p>
+<img src= "Images/10 paskaita/animation.gif" alt = "No image found" width="800px" height="500px">
+<p>Tada pridėkime reikalingus komponentus paukščiui (Collidre, Rigidbody). Belieka užprogramuoti mūsų žaidimo logiką.</p>
+<hr>
+<h3><ins>Tutorials (Pamokos)</ins></h3>
+    <ol>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/physics/raycasting">Raycasting</a> tutorial (recommended)</li>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/scripting/enabling-and-disabling-components">Enabling and disabling components</a> tutorial (recommended)</li>
+    </ol>
+<hr>
 
+<h3><ins>Užduotys</ins></h3>
+<ol>
+    <li>Sukurkite dar 3 skirtingus paukščius ir pridėkite juos į žaidimą.(Kad jie būtų atsitiktinai generuojami kartu su geltonu paukščiu)</li>
+    <li>Padaryti pauzės mygtuka(ESC), kurį paspaudus kartą žaidimas sustoja, o paspaudos dar kartą žaidimas tęsiasi.</li>
+</ol>
 </body>
 </html>
