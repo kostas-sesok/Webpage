@@ -4,12 +4,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>10 paskaita Duck Hunt</title>
+        <title>12 paskaita Hill Climb racing</title>
     </head>
 <body>
 
 <h1>12 paskaita</h1>
 
-<p><b><i>Aprašymas:</i></b> "Hill Climb racing" - Hill Climb racing žaidimo kūrimas. Wheel Joint 2D. Use motor, motor speed. Suspension. Frequency. Angle. Project Setting > Input > Axes > Sensitivity. Papildomai : galima nematomus buttonus padaryt, kad per telefoną; valdyt galima būtų.</p>
+<p><b><i>Aprašymas:</i></b> "Hill Climb racing" - Hill Climb racing žaidimo kūrimas. Wheel Joint 2D. Use motor, motor speed. Suspension. Frequency. Angle. Project Setting > Input > Axes > Sensitivity. Camera Controller</p>
+<h3>Assets:</h3>
+<p>Atsisiunčiam iš Asset Store -&#x3E; &#x22;2D Sprites Pack&#x22;.</p>
+<img src="Images/3 paskaita/2dspritespack.png" >
+<p>Arba iš <a href="https://www.assetstore.unity3d.com/en/#!/content/73728">čia</a>.</p>
+<hr>
+<p>Susidėliokime sceną, kad ji atrodytų daug maž taip: </p>
+<img src="Images/12 paskaita/scene.png" >
+<p>Tada, kiekvienam objektui pridėkite colliderius: Žemei - Box collider, Ratam - Circle collider, Kebului - Polygon collider.</p>
+<p>Taip pat pridėkite kebului ir ratam Rigidbody2D komponentą. Tada, ratus padarykite kėbulo objekto vaikiniais objektais.</p>
+<img src="Images/12 paskaita/childParent.gif" >
+<p>Atlikę šiuos veiksmus, reikia nurodyti mūsų kėbului kur bus jo ratai. Kad tai padaryti mum reikės WheelJoint2D komponentų ant kėbulo. Juos reikia pridėti 2, po vieną kiekvienam ratui.</p>
+<p>Sekantis žingsnis būtų į kiekvieno WheelJoint2D komponento "Connected Rigidbody" vietą įtempti po ratą.</p>
+<p>Dabar beliko nustatyti rato sukimosi ašies centrą. Šis nustatymas vadinasi "Anchor" ir yra ant WheelJoint2D komponento. <br>
+Jo pozicija turi būti tokia pati, kaip atitinkamo rato transform komponento pozicija.</p>
+<p>Na, o toliau pasitelksim programavimo galias, kad mašina pradėtų važiuoti :)</p>
+<hr>
+<h3><ins>Tutorials (Pamokos)</ins></h3>
+    <ol>
+        <li><a href="https://www.youtube.com/watch?v=Fcjxe_KhgI4">Wheel Joint2D</a> tutorial (recommended)</li>
+    </ol>
+<hr>
+
+<h3><ins>Užduotys</ins></h3>
+<ol>
+    <li>Padaryti pauzės mygtuka(ESC), kurį paspaudus kartą žaidimas sustoja, o paspaudos dar kartą žaidimas tęsiasi.</li>
+    <li>Sukurti menu sceną</li>
+</ol>
 </body>
 </html>
