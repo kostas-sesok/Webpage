@@ -12,6 +12,64 @@
 
 <p><b><i>Aprašymas:</i></b> "Mario klonas, 1 dalis" - Mario klono žaidimo kūrimas. Player Movement, animations. Window->Animation. Window->Animator->Mario, MakeTransitions, Parameters + (bool, float). GroundChecker, Layer Mask. Physics2D.OverLapCircle(); transform.localScale. anim.SetBool(), anim.SetFloat(). Sukuriam Level2. Flag - LevelChanger (su OnTriggerEnter2D).</p>
 <p><a href="Files/13_Paskaita/platformer-pack-redux-360-assets.zip" download><b>Sprites</b></ins></a></p>
-
+<p>Šiandiena, dėmesį sutelksime į animacijų kūrima. Išmoksim nuosekliai nuo nuolio sukurti animacijas žaidėjui. Valdysim animacijų būseną per skriptą.</p>
+<h3>Kaip sukurti animacija:</h3>
+<p>Animacijos kūrimą sudaro 3 žingsniai</p>
+<ol>
+    <li><b>Animacijos klipo kūrimas.
+        Animacijos klipą galima kurti keliais būdais, bet labiausiai korektiškas iš jų būtų šis:</b>
+        <ol>
+            <li>Atidarykite "Animation" langa, eidami į Window-> Animation arba spauskite CTRL+6.</li>
+            <li>Pažymėkime scenoje objektą ant kurio norime kurti animacijas.</li>
+            <li>Tada jei dar neturite sukurtų animacijų, spauskite mygtuką "Create" viduryje lango.</li>
+            <li>Jei turite sukurtų animacijų, spauskite kairėje viršuje, kur yra jūsų dabartinio animacijos klipo pavadinimas, ir raskite "Create New Clip" option'ą. </li>
+            <img src= "Images/13 paskaita/CreateNewClip.png" alt = "No image found">
+            <li>Išsaugokite animaciją, duodant jai kažkokį pavadinimą, tik nenutrinkite .anim failo extension'o.</li>
+            <li>Tada, papraščiausiai imkite sprite'us su kuriais norite kurti animaciją ir tempkite juos į animation langą.</li>
+            <li>Animacija jau sukurta, belieka sukonfiguruoti jos greitį jeigu jis nėra jum tinkamas, tai galite padaryti pakeitus "Samples" parametrą.</li>
+        </ol>
+    </li>
+    <li><b>Animacijos klipo konfigūravimas Animatoriuje</b>
+        <ol>
+            <li>Kad įsijungti animatorių, eikite į Window-> Animator</li>
+            <li>Atsidariusiame lange matysite jūsų kurtus animacijų klipus ant tam tikro objekto. Jeigu nematote norimų animacijų, pažymėkite norima animatoriaus asset'ą, Assets folder'yje.</li>
+            <li>Oranžiniai šviečiantys klipai, yra jūsų "default" animacijos, kurios pasileis visada, tik paleidus žaidimą, jei objektas turės būtent šį animatorių.</li>
+            <li>Pilkai šviečiančios animacijos nebus kviečiamos kol jų nesujungsite perėjimais(transition).</li>
+            <li>Kad tai padaryti, pažymėkite animacijos klipą animatoriuje, ir spauskite dešinį pelės mygtuką, tada pasirinkite opciją "transition".</li>
+            <li>Tada, atsiradusią rodyklę sujunkite su kitu animacijos klipu.</li>
+            <li>Po sujungimo pažymėkite rodyklę, kad matytumėte visus perėjimo parametrus.</li>
+            <li>Pasikeiskite juos pagal poreikį. Šiam projektui mes Išjungiame "Has Exit Time" nustatymą ir "Transition Duration" reikšmę keičiame į nulį.</li>
+            <li>Tada reikia pridėti parametrus, kad per skriptą žinotume, kada ir kokią animaciją reikia ijungti.</li>
+            <li>Animatoriaus lango kairėje viršutinėje dalyje pasirenkame skiltį "Parameters" ir spaudžiame netoliese esantį pliuso ženklą.</li>
+            <li>Tada sukuriame reikiamo tipo parametrą. Žiūrėkite pagal situaciją, kokio jum gali prireikti.</li>
+            <li>Sukūrę parametrą, mum reikia jį pridėti mūsų perėjimui(transition), paspausdę and rodyklės ir inspektoriuje iššokus perėjimo nustatymam, paspauskite apačioje esantį pliuso ženklą, kad pridėti sąlygą.</li>
+            <li>Nustatykite ją pagal poreikį.</li>
+            <img src= "Images/13 paskaita/Animator.png" alt = "No image found">
+        </ol>
+    </li>
+    <li><b>Animacijų perėjimų(transition) parametrų keitimas per skriptą</b>
+        <ol>
+            <li>Per skriptą, vietoje kurioje norite keisti animacijas, naudokite <a href="https://docs.unity3d.com/Manual/AnimationParameters.html">Set</a> funckijas, kad pakeisti norimą parametrą</li>
+        </ol>
+    </li>
+</ol>
+<h3>Sveikinu sukūrus jūsų pirmą animaciją :)</h3>
+<hr>
+<p>PlayerController.cs</p>
+<img src= "Images/13 paskaita/PlayerController1.png" alt = "No image found">
+<img src= "Images/13 paskaita/PlayerController2.png" alt = "No image found">
+<hr>
+<h3><ins>Tutorials (Pamokos)</ins></h3>
+    <ol>
+        <li><a href="https://www.youtube.com/watch?v=JeZkctmoBPw">Animator Controller</a> tutorial (recommended)</li>
+        <li><a href="https://unity3d.com/learn/tutorials/topics/2d-game-creation/sprite-editor">Sprite Editor</a> tutorial (recommended)</li>
+    </ol>
+<hr>
+<h3><ins>Užduotys</ins></h3>
+<ol>
+    <li>Sukurti dar vieną žaidėjo avatarą (character) su visom animacijom, tik kitokios spalvos.</li>
+    <li>Sukurti finišo linija. Panaudokite collider trigger'ius.</li>
+</ol>
+<a href="Files/13_Paskaita/Platformer2D.zip" download><h3><ins>Galutinis paskaitos projektas atsisiųsti</ins></h3></a>
 </body>
 </html>
